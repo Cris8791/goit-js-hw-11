@@ -10,7 +10,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; /* Modificarea aici pentru a schimba direcția coloanei */
+  flex-direction: column;
 }
 
 .search-form {
@@ -64,7 +64,7 @@ button {
 }
 
 .photo-card .lightbox img {
-  display: block; /* sau display: inline-block; */
+  display: block;
   width: 100%;
   height: auto;
   border-radius: 5px;
