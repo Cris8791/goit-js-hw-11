@@ -1,0 +1,75 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(./images/background1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Modificarea aici pentru a schimba direcția coloanei */
+}
+
+.search-form {
+  display: inline-block;
+  margin: 30px auto;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+input[type='text'] {
+  padding: 10px;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #2d2c2cb0;
+  border-radius: 5px;
+  width: 300px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 15px;
+  position: relative;
+}
+
+.photo-card {
+  width: calc(33.33% - 20px);
+  height: auto;
+  border-radius: 5px;
+  border: 1px solid #42414126;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.photo-card .lightbox img {
+  display: block; /* sau display: inline-block; */
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.photo-card .info {
+  padding-left: 20px;
+}

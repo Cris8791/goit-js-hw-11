@@ -68,7 +68,12 @@ document.addEventListener('DOMContentLoaded', function () {
         ) {
           currentPage++;
         } else {
-          Notiflix.Notify.success(`Hooray! We found ${totalHits} images.`);
+          debugger;
+          console.log(`Hooray! We found ${totalHits} images.`);
+
+          setTimeout(() => {
+            Notiflix.Notify.success(`Hooray! We found ${totalHits} images.`);
+          }, 2000);
         }
       } else {
         console.log('Matricea de imagini este goală.');
